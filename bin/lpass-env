@@ -50,7 +50,7 @@ invalid_action() {
 launch_shell() {
 	echo "[lpass-env] Launching shell with environment from: $KEY_NAME"
 	$(export_vars)
-	PS1="lpass-env[$KEY_NAME]:\W \u\$ " bash
+	PS1="lpass-env[$KEY_NAME]:\W \u\$ " zsh
 }
 
 print_vars() {
